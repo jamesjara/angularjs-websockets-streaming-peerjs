@@ -1,20 +1,122 @@
 <!doctype html>
-<html lang="en" ng-app="mirrormeApp">
-  <head>
-    <meta charset="utf-8">
-    <title>My HTML File</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="app.js"></script>
-  </head>
-  <body ng-controller="ViewportController">
-
-  <ul>
-    <li ng-repeat="phone in phones">
-      <span>{{phone.name}}</span>
-      <p>{{phone.snippet}}</p>
-    </li>
-  </ul>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+ <script src="//cdn.peerjs.com/0.3/peer.js"></script>  
+  <script src="app.js"></script>
+<style>
+body {
+  background: #000000;
+  margin: 0;
+  padding: 0;
   
-  </body>
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.counterDown-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 999999;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 6px;
+}
+
+.their-video-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 9;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#their-video {
+    height: 100%;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fullscreen-bg > video {
+    height: 100%;
+}
+
+#their-video-background{
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(55px);
+  -moz-filter: blur(55px);
+  -o-filter: blur(55px);
+  -ms-filter: blur(55px);
+  filter: blur(55px);
+}
+
+ 
+
+.counterDown{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+.counterDown > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+    margin: 4px;
+}
+
+.counterDown div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.smalltext {
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.my-video-container {
+    background-color: #00bf96;
+    padding: 0px;
+    margin: -11px;
+}
+
+</style>
+</head>
+
+<body ng-app="mirrorme">
+  <div ng-controller="viewportController">
+    <div ng-show="!loaded">loading</div>
+    <div ng-show="loaded" toolbar></div>
+    <div ng-show="loaded" visitor></div>
+    
+  </div>
+</body>
 </html>
