@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "requirejs": "^2.3.2",
-    "angular": "1.4.x",
+    "angular": "1.4.14",
     "jquery": "2.2.x",
     "peerjs": "^0.3.14",
     "webcam-directive": "3.1.1"
