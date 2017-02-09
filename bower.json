@@ -1,5 +1,5 @@
 {
-  "name":"angularjswebsockets",
+  "name": "angularjswebsockets",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
@@ -10,6 +10,11 @@
     "angular-resource": "1.5.x",
     "angular-route": "1.5.x",
     "bootstrap": "3.3.x",
-    "jquery": "2.2.x"
+    "jquery": "2.2.x",
+    "peerjs": "^0.3.14",
+    "webcam": "webcam-directive#^3.1.1"
+  },
+  "devDependencies": {
+    "requirejs": "^2.3.2"
   }
 }

@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
- <script src="//cdn.peerjs.com/0.3/peer.js"></script>
-  <script src="app/app.js"></script>
+  <script2 src="libs/jquery/dist/jquery.min.js"></script>
+  <script2 src="libs/angular/angular.min.js"></script>
+  <script2 src="libs/peerjs/peer.min.js"></script>
+  <script2 src="app/app.js"></script>
 <style>
 body {
   background: #000000;
@@ -108,15 +108,21 @@ body {
     margin: -11px;
 }
 
+div2#my-video > video {
+    width: 80px !important;
+    height: 80px !important;
+}
+
 </style>
 </head>
 
-<body ng-app="mirrorme">
-  <div ng-controller="viewportController">
+<body>
+  <div ng-controller="ViewportController">
     <div ng-show="!loaded">loading</div>
     <div ng-show="loaded" toolbar></div>
     <div ng-show="loaded" visitor></div>
 
   </div>
+   <script type="text/javascript" src="/libs/requirejs/require.js" data-main="/app/main.js"></script>
 </body>
 </html>
