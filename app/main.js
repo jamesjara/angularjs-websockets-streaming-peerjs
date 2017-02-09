@@ -4,7 +4,7 @@ require.config({
 	paths: {
     'jQuery': '../libs/jquery/dist/jquery',
 		'angular': '../libs/angular/angular',
-		'webcam': '../libs/webcam/dist/webcam.min',
+		'webcam': '../libs/webcam-directive/dist/webcam.min',
 		'Peer': '../libs/peerjs/peer'
 	},
 	shim: {

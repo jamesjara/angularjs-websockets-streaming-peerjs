@@ -5,26 +5,9 @@
   "private": true,
   "dependencies": {
     "requirejs": "^2.3.2",
-    "angular": "1.5.x",
-    "angular-animate": "1.5.x",
-    "angular-mocks": "1.5.x",
-    "angular-resource": "1.5.x",
-    "angular-route": "1.5.x",
-    "bootstrap": "3.3.x",
+    "angular": "1.4.x",
     "jquery": "2.2.x",
     "peerjs": "^0.3.14",
-    "webcam": "webcam-directive#^3.1.1"
-  },
-  "devDependencies": {
-    "requirejs": "^2.3.2",
-    "angular": "1.5.x",
-    "angular-animate": "1.5.x",
-    "angular-mocks": "1.5.x",
-    "angular-resource": "1.5.x",
-    "angular-route": "1.5.x",
-    "bootstrap": "3.3.x",
-    "jquery": "2.2.x",
-    "peerjs": "^0.3.14",
-    "webcam": "webcam-directive#^3.1.1"
+    "webcam-directive": "*"
   }
 }
