@@ -10,8 +10,8 @@
     "preupdate-webdriver": "npm install"
   },
   "dependencies": {
-    "express": "~4.10.2",
-    "bower": "^1.7.7"
+    "express": "lastest",
+    "bower": "lastest"
   },
   "repository": {
     "type": "git",
