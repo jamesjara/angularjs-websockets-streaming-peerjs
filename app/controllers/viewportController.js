@@ -17,7 +17,7 @@ define(['angular','Peer','webcam','jQuery'], function(angular, Peer, webcam, jQu
 			// create peer connection
 			peer = new Peer({
 				host: 'peer-server-mirrorme.herokuapp.com',
-				port: 80,
+				port: /*location.port || */ (location.protocol === 'https:' ? '443' : '80'),
 				path: '/',
 				key: 'peerjs',
 				allow_discovery: true
@@ -55,7 +55,7 @@ define(['angular','Peer','webcam','jQuery'], function(angular, Peer, webcam, jQu
 			  console.info("ansering call from player id: ",call);
 				call.answer(me.stream);
 			});
-			
+
 			function callSomeOne() {
 				user.visitor(function(playerId) {
 
