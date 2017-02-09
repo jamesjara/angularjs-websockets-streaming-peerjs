@@ -5,12 +5,12 @@
   "private": true,
   "dependencies": {
     "requirejs": "^2.3.2",
-    "angular": "~1.4.0",
+    "angular": "^1.6.2",
     "jquery": "2.2.x",
     "peerjs": "^0.3.14",
     "webcam-directive": "3.1.1"
   },
   "resolutions": {
-    "angular": "1.4.0"
+    "angular": "~1.4.0"
   }
 }
