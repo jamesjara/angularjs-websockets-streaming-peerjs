@@ -8,6 +8,6 @@
     "angular": "1.4.x",
     "jquery": "2.2.x",
     "peerjs": "^0.3.14",
-    "webcam-directive": "*"
+    "webcam-directive": "3.1.1"
   }
 }
